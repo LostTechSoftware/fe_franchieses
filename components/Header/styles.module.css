@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: fit-content;
+  margin-top: calc( var(--horizontal-page-padding) + 4.2px );
+  padding: 0 var(--horizontal-page-padding);
+}
+
+.container nav {
+  display: flex;
+}
+
+.container a {
+  margin-left: 30px;
+  font-weight: 600;
+}
+.container a:last-of-type {
+  margin-right: 4px;
+}
+.selected {
+  color: #F8E22B;
+}

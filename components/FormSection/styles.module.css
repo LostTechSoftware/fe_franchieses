@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  margin-top: calc( var(--horizontal-page-padding) + 4.2px );
+  padding: 0 var(--horizontal-page-padding);
+}
+
+.form {
+  width: 57.54%;
+}
+
+.form h1 {
+  font-size: 4.2rem;
+  line-height: 1.36;
+  font-weight: bold;
+  color: #343A40;
+}
+
+.form h1 strong {
+  color: #F8E22B;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 574px;
+  justify-content: space-between;
+}
+
+.inputs input,
+.inputs label,
+.inputs option {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.form .submitButton {
+  transition: 0.2s;
+  padding: 16.5px 24.5px;
+  margin-top: 7.6px;
+  font-size: 1.6rem;
+
+  background-color: #F8E22B;
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.form .submitButton:hover {
+  transition: 0.2s;
+  background-color: #F8E22B;
+  filter: contrast(90%)
+}
+
+.cellPhone {
+  width: auto;
+}
