@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -26,4 +27,27 @@ a {
   font-size: 1.6rem;
   color: #343a40;
   text-decoration: none;
+}
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 45%;
+  }
 }

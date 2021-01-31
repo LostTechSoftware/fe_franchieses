@@ -55,3 +55,18 @@
 .cellPhone {
   width: auto;
 }
+
+@media (max-width: 720px){
+  .cellPhone {
+    display: none;
+    width: auto;
+  }
+  .form {
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    margin-top: calc( var(--horizontal-page-padding) + 4.2px );
+    padding: 5%;
+  }
+}
