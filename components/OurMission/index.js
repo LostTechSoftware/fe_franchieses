@@ -34,7 +34,7 @@ export default function OurMission() {
         <figure className={styles.card3}>
           <div className={styles.circle3}>
             <div className={styles.internalcircle3}>
-              <img src="icons/phone.svg" alt="phone" />
+              <img src="icons/smartPhone.svg" alt="phone" />
             </div>
           </div>
           <h2 className={styles.cardTitle}>Excelente Produto</h2>

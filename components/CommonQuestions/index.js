@@ -1,21 +1,26 @@
+import PropTypes from 'prop-types';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 
 import styles from './styles.module.css';
 
-const useStyles = makeStyles(() => ({
+const materialStyles = {
   accordionRoot: {
     maxWidth: 750,
     color: '#000',
-    border: 'none',
+    boxShadow: 'none',
+    borderTop: 'solid 1px #343a40',
+    '&:last-of-type': {
+      borderBottom: 'solid 1px #343a40',
+    },
     '&::before': {
       display: 'none'
     }
   },
   accordionSummary: {
+    boxShadow: 'none',
     paddingTop: 18,
     paddingBottom: 18,
     border: 'none',
@@ -25,28 +30,23 @@ const useStyles = makeStyles(() => ({
   },
   none: {
     border: 'none'
-    
   }
-}));
+};
 
-export default function CommonQuestions() {
-  const materialStyles = useStyles();
-  
+function CommonQuestions({ classes }) {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
         Perguntas Frequentes
       </h1>
-      <Accordion square className={materialStyles.accordionRoot} >
+      <Accordion square className={classes.accordionRoot} >
         <AccordionSummary
-          className={materialStyles.accordionSummary}
+          className={classes.accordionSummary}
           expandIcon={<p>UE</p>}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
         >
           <p className={styles.heading}>1. Quanto custa a franquia?</p>
         </AccordionSummary>
-        <AccordionDetails className={materialStyles.none}>
+        <AccordionDetails className={classes.none}>
           <p className={styles.details}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
             sit amet blandit leo lobortis eget.
@@ -54,17 +54,15 @@ export default function CommonQuestions() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion square className={materialStyles.accordionRoot} >
+      <Accordion square className={classes.accordionRoot} >
         <AccordionSummary
-          className={materialStyles.accordionSummary}
+          className={classes.accordionSummary}
           expandIcon={<p>UE</p>}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
         >
           <p className={styles.heading}>1. Quanto custa a franquia?</p>
         </AccordionSummary>
         <AccordionDetails>
-          <p className={styles.details}>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
             sit amet blandit leo lobortis eget.
           </p>
@@ -73,3 +71,9 @@ export default function CommonQuestions() {
     </div>
   )
 }
+
+CommonQuestions.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(materialStyles)(CommonQuestions);

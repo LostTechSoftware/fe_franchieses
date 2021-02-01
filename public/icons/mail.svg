@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Imagem_118" data-name="Imagem 118" width="16" height="16" transform="translate(694 3788)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_15" data-name="Grupo de máscara 15" transform="translate(-694 -3788)" clip-path="url(#clip-path)">
+    <g id="envelope-line" transform="translate(694 3790.215)">
+      <path id="Caminho_50" data-name="Caminho 50" d="M.918,0H15.082A.92.92,0,0,1,16,.918v9.734a.91.91,0,0,1-.159.514.353.353,0,0,1-.172.189.915.915,0,0,1-.587.214H.918A.92.92,0,0,1,0,10.652V.918A.92.92,0,0,1,.918,0ZM.7,10.266,5.668,5.289.7,1.242v9.024ZM6.215,5.735,1.1,10.866H14.86L9.969,5.736,8.357,7.11h0a.352.352,0,0,1-.45.006L6.215,5.735ZM10.5,5.28,15.3,10.306V1.2L10.5,5.28ZM1.155.7,8.124,6.386,14.793.7H1.155Z" fill="#747e88"/>
+    </g>
+  </g>
+</svg>

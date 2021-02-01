@@ -21,6 +21,12 @@ const StyledTextField = withStyles({
     },
     '& .MuiInput-underline:after': {
       borderBottomColor: '#F8E22B'
+    },
+    '& .MuiFormLabel-root': {
+      fontSize: 16
+    },
+    '& .MuiInputLabel-shrink': {
+      fontSize: 20
     }
   }
 })(TextField);
@@ -50,13 +56,14 @@ export default function FormSection() {
           <strong>próprio app de delivery na sua cidade</strong>
         </h1>
 
-        <p>Após cadastrar-se nosso time logo entrará em contato com você!</p>
+        <p style={{ fontSize: '16px' }} >Após cadastrar-se nosso time logo entrará em contato com você!</p>
 
         <div className={styles.inputs}>
           <StyledTextField
             className={styles.input}
             style={{ width: '100%', maxWidth: 272}}
             label='Nome'
+            type='text'
             value={name}
             onChange={event => setName(event.target.value)}
           />
@@ -71,24 +78,22 @@ export default function FormSection() {
 
           <StyledTextField
             className={styles.input}
-            style={{ width: '100%', maxWidth: 272}}
-            label='Nome'
-            value={city}
-            onChange={event => setCity(event.target.value)}
-            select
-          />
-
-          <StyledTextField
-            className={styles.input}
             style={{ width: '100%', maxWidth: 272, color: '#d12'}}
-            label='Nome'
+            label='Estado'
             value={uf}
             onChange={event => setUf(event.target.value)}
-            select
           >
             <MenuItem value="10">Ten</MenuItem>
             <MenuItem value="20">Twenty</MenuItem>
           </StyledTextField>
+
+          <StyledTextField
+            className={styles.input}
+            style={{ width: '100%', maxWidth: 272}}
+            label='Cidade'
+            value={city}
+            onChange={event => setCity(event.target.value)}
+          />
         </div>
 
         <Button className={styles.submitButton} type='submit'>
@@ -99,3 +104,5 @@ export default function FormSection() {
     </main>
   );
 }
+
+//  MuiFormLabel-filled"

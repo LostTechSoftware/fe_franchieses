@@ -48,8 +48,9 @@ export default function HowWillItWork() {
         <div className={styles.HowWillItWorkTextRight}>
           <text className={styles.title}>Como vai funcionar assim que eu me franquear?</text>
           <text className={styles.paragraph1}>Após se cadastrar nosso time entrará em contato com você, faremos uma entrevista, após ser aprovado já poderá passar para nosso time jurídico onde será assinado o contrato e será encaminhado e treinado pelo nosso time de campo para já poder começar a atuar. O processo leva menos de uma semana.</text>
+          
           <Button className={styles.submitButton} type='submit'>
-            Cadastre-se
+            Aproveite
           </Button>
         </div>
         

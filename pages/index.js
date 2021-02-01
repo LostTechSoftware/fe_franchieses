@@ -1,13 +1,20 @@
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 import styles from '../styles/Home.module.css'
 
 import Header from '../components/Header';
-import FormSection from '../components/FormSection';
+// import FormSection from '../components/FormSection';
 import OurMission from '../components/OurMission';
 import FranchiseFee from '../components/FranchiseFee';
 import HowWillItWork from '../components/HowWillItWork';
-import CommonQuestions from '../components/CommonQuestions';
 import Footer from '../components/Footer';
+
+const FormSection = dynamic(() => import('../components/FormSection'), {
+  ssr: false
+})
+const CommonQuestions = dynamic(() => import('../components/CommonQuestions'), {
+  ssr: false
+})
 
 export default function Home() {
   return (
@@ -30,8 +37,6 @@ export default function Home() {
       <CommonQuestions />
 
       <Footer />
-      <footer className={styles.footer}>
-      </footer>
     </div>
   )
 }
