@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_74" data-name="Retângulo 74" width="45" height="45" transform="translate(393 880)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_5" data-name="Grupo de máscara 5" transform="translate(-393 -880)" clip-path="url(#clip-path)">
+    <g id="gold-medal" transform="translate(402.373 880)">
+      <path id="Caminho_20" data-name="Caminho 20" d="M.435.008H9.923L18.47,15.552a1.915,1.915,0,0,0,.754.754H6.467L.435,0V.008ZM13.127,24.292l2.193,5.354,5.775.435-4.42,3.75,1.373,5.617L13.127,36.4,8.206,39.449l1.373-5.617L5.155,30.078l5.775-.436,2.2-5.35Zm0-5.548A13.128,13.128,0,1,1,0,31.868,13.127,13.127,0,0,1,13.127,18.745ZM14.292.008h11.1L20.927,12.084,14.292.008Z" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

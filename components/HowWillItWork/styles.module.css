@@ -56,13 +56,23 @@
   border-radius: 50%;
 }
 .internalcircle1{
+  display: flex;
+  align-items: center;
   margin-top: 12.45555px;
   width: 60.1px;
   height: 60.1px;
   background-image: linear-gradient(to bottom, #e68f38, #c41d17);
   border-radius: 50%;
 }
+.internalcircle1 img{
+  margin-left: 11px;
+  width: 32.9px;
+  height: 34px;
+}
 .internalcircle2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 12.45555px;
   width: 60.1px;
   height: 60.1px;
@@ -144,6 +154,23 @@
   border-radius: 8px;
   background-color: #ffe115;
 }
+.submitButton{
+  transition: 0.2s;
+  padding: 16.5px 24.5px;
+  margin-top: 7.6px;
+  font-size: 1.6rem;
+
+  background-color: #F8E22B;
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.submitButton{
+  transition: 0.2s;
+  background-color: #F8E22B;
+  filter: contrast(90%)
+}
 /*Responsive cards*/
 @media (max-width: 1160px){
   .cards{
@@ -216,6 +243,7 @@
     border-radius: 50%;
   }
 }
+
 /*Responsive text*/
   @media (max-width: 1300px){
   .HowWillItWorkTextRight{
@@ -303,9 +331,73 @@
     flex-direction: column;
     margin-top: 80px;
     width: 80%;
-    height: 47.8rem;
+    height: 57.8rem;
     left: auto;
     right: auto;
+    
+  }
+  .title{
+    font-size: 4.2rem;
+    line-height: 1.36;
+    color: #343a40;
+    font-weight: bold;
+    text-align: center;
+  }
+  .paragraph1{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #747e88;
+    margin-top: 3.8rem;
+  }
+  .phases{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 461.5px;
+    margin-left: 32.9px;
+    width: 8.09rem;
+    height: 37.7rem;
+    
+  }
+  .phasesDescriptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 466.5px;
+    margin-left: 3.2rem;
+    width: 11.6rem;
+    height: 36.8rem;
+    
+  }
+  .register{
+    align-self: center;
+    width: 13.7rem;
+    height: 5.5rem;
+    margin-top: 5.75rem;
+    border-radius: 8px;
+    background-color: #ffe115;
+  }
+}
+@media(max-width:367px){
+  .phases{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 481.5px;
+    margin-left: 32.9px;
+    width: 8.09rem;
+    height: 37.7rem;
+    
+  }
+  .phasesDescriptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 486.5px;
+    margin-left: 3.2rem;
+    width: 11.6rem;
+    height: 36.8rem;
     
   }
 }

@@ -23,8 +23,31 @@
 .selected {
   color: #F8E22B;
 }
+.container img{
+  width: 150px;
+  height: 29.5px;
+}
+@media (max-width: 720px){
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: fit-content;
+    margin-top: calc( var(--horizontal-page-padding) + 4.2px );
+    padding-left: calc( var(--horizontal-page-padding) + -40px );
+  }
+}
+@media (max-width: 340px){
+  .container a {
+    margin-left: 15px;
+    font-weight: 600;
+  }
+}
 @media (max-width: 440px){
-  .container nav {
+  .selected {
     display: none;
+    color: #F8E22B;
   }
 }

@@ -103,6 +103,14 @@
   text-align: left;
   color: #747e88;
 }
+/*IMAGES*/
+.elipse{
+  float: left;
+  position: absolute;
+  left: -30.0rem;
+  top: 12.33rem;
+}
+/*Responsive text*/
 @media (max-width: 720px){
   .franchiseoff{
     position: relative;

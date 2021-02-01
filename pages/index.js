@@ -6,6 +6,8 @@ import FormSection from '../components/FormSection';
 import OurMission from '../components/OurMission';
 import FranchiseFee from '../components/FranchiseFee';
 import HowWillItWork from '../components/HowWillItWork';
+import CommonQuestions from '../components/CommonQuestions';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -25,6 +27,9 @@ export default function Home() {
       
       <HowWillItWork />
 
+      <CommonQuestions />
+
+      <Footer />
       <footer className={styles.footer}>
       </footer>
     </div>

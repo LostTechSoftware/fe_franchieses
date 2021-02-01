@@ -66,13 +66,23 @@
   border-radius: 50%;
 }
 .internalcircle1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 12.45555px;
   width: 60.1px;
   height: 60.1px;
   background-image: linear-gradient(to bottom, #17d664, #0cbf54);
   border-radius: 50%;
 }
+.internalcircle1 img{
+  width: 36.5px;
+  height: 35.9px;
+}
 .internalcircle2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 12.45555px;
   width: 60.1px;
   height: 60.1px;
@@ -80,6 +90,9 @@
   border-radius: 50%;
 }
 .internalcircle3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 12.45555px;
   width: 60.1px;
   height: 60.1px;
@@ -87,6 +100,9 @@
   border-radius: 50%;
 }
 .internalcircle4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 12.45555px;
   width: 60.1px;
   height: 60.1px;
