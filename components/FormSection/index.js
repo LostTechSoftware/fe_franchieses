@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import TextField from '@material-ui/core/TextField';
-import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 
+import registerLead from './firetore';
 import styles from './styles.module.css';
 
 const StyledTextField = withStyles({
@@ -13,6 +13,9 @@ const StyledTextField = withStyles({
     width: '100%',
     maxWidth: 272,
     height: 48,
+    '& input': {
+      fontSize: 16,
+    },
     '& label.Mui-focused': {
       color: '#F8E22B'
     },
@@ -37,26 +40,16 @@ export default function FormSection() {
   const [ city, setCity ] = useState('');
   const [ uf, setUf ] = useState('');
 
-  async function registerLead(event) {
-    event.preventDefault();
-    try {
-      alert('shall save a new lead');
-    } catch (error) {
-      console.log(error);
-      return error;
-    }
-  }
-
   return (
     <main className={styles.container}>
-      <form onSubmit={registerLead} className={styles.form}>
+      <form onSubmit={event => registerLead(event, name, email, uf, city)} className={styles.form}>
         <h1>
           Torne-se um franqueado FoodZilla e seja dono do seu
           <br/>
           <strong>próprio app de delivery na sua cidade</strong>
         </h1>
 
-        <p style={{ fontSize: '16px' }} >Após cadastrar-se nosso time logo entrará em contato com você!</p>
+        <p>Após cadastrar-se nosso time logo entrará em contato com você!</p>
 
         <div className={styles.inputs}>
           <StyledTextField
