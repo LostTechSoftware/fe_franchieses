@@ -20,7 +20,7 @@ export default function FranchiseFee() {
           <div className={styles.rightTextBottom}>
             <text className={styles.freeFranchise}>Gratuita para os próximos 20 franqueados!</text>
             <text className={styles.rightTextBottomParagraph}>Estamos focados em um rápido processo de expansão, por isso zeramos a taxa de franquia para os próximos 20 franqueados aprovados.</text>
-            <DefaultButton className={styles.scrollButton}>
+            <DefaultButton onClick={()=> window.scroll(0, 0)} className={styles.scrollButton}>
               Aproveite
             </DefaultButton>
           </div>
