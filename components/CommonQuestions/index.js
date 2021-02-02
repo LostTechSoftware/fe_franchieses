@@ -48,8 +48,11 @@ function CommonQuestions({ classes }) {
         </AccordionSummary>
         <AccordionDetails className={classes.none}>
           <p className={styles.details}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+            O valor da franquia é de 1 a 5 mil reais variando de
+            acordo com o número de habitantes da região desejada. Porém por tempo limitado
+            zeramos a taxa de adesão da franquia para os próximos 20 aprovados pelo
+            processo, contando a partir do dia desta postagem. Pois estamos focados em
+            acelerar nosso processo de expansão.
           </p>
         </AccordionDetails>
       </Accordion>
@@ -59,12 +62,44 @@ function CommonQuestions({ classes }) {
           className={classes.accordionSummary}
           expandIcon={<p>UE</p>}
         >
-          <p className={styles.heading}>1. Quanto custa a franquia?</p>
+          <p className={styles.heading}>2. Como consigo cadastrar os restaurantes da minha cidade?</p>
         </AccordionSummary>
         <AccordionDetails>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+            Após ser aprovado você passará por um treinamento onde aprenderá 
+            tudo que for preciso para atuar como um de nossos franqueados.
+          </p>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion square className={classes.accordionRoot} >
+        <AccordionSummary
+          className={classes.accordionSummary}
+          expandIcon={<p>UE</p>}
+        >
+          <p className={styles.heading}>3. Como vai funcionar o marketing?</p>
+        </AccordionSummary>
+        <AccordionDetails>
+          <p>
+            Assim que estiver franqueado, após cadastrar os restaurantes 
+            da sua cidade, faremos o marketing e prepararemos tudo para o 
+            lançamento do app bombar na sua região.
+          </p>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion square className={classes.accordionRoot} >
+        <AccordionSummary
+          className={classes.accordionSummary}
+          expandIcon={<p>UE</p>}
+        >
+          <p className={styles.heading}>4. O mercado não está saturado?</p>
+        </AccordionSummary>
+        <AccordionDetails>
+          <p>
+            Nosso aplicativo é focado nas cidades que possuem entre 10 a 
+            300 mil habitantes, tais cidades onde não é o foco da maioria
+            das marcas do mercado e que ficam carentes desse tipo de serviço.
           </p>
         </AccordionDetails>
       </Accordion>
