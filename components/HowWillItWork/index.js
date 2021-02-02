@@ -1,4 +1,4 @@
-import Button from '@material-ui/core/Button';
+import DefaultButton from '../DefaultButton';
 import styles from './styles.module.css';
 
 export default function HowWillItWork() {
@@ -39,7 +39,7 @@ export default function HowWillItWork() {
           <div className={styles.phasesDescriptions}>
             <text className={styles.phaseDescription}>Cadastramento</text>
             <text className={styles.phaseDescription}>Entrevista</text>
-            <text className={styles.phaseDescription}>Contato</text>
+            <text className={styles.phaseDescription}>Contrato</text>
             <text className={styles.phaseDescription}>Treinamento</text>
             <text className={styles.phaseDescription}>Ação!</text> 
           </div>
@@ -48,11 +48,10 @@ export default function HowWillItWork() {
           <text className={styles.title}>Como vai funcionar assim que eu me franquear?</text>
           <text className={styles.paragraph1}>Após se cadastrar nosso time entrará em contato com você, faremos uma entrevista, após ser aprovado já poderá passar para nosso time jurídico onde será assinado o contrato e será encaminhado e treinado pelo nosso time de campo para já poder começar a atuar. O processo leva menos de uma semana.</text>
           
-          <Button className={styles.submitButton} type='submit'>
-            Aproveite
-          </Button>
+          <DefaultButton className={styles.submitButton}>
+            Cadastre-se
+          </DefaultButton>
         </div>
-        
       </div>  
     </section>
   )

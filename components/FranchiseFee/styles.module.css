@@ -92,12 +92,16 @@
   font-family: 'Open Sans', sans-serif;
 }
 .rightTextBottomParagraph{
-  position: absolute;
-  bottom: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
   text-align: left;
   color: #747e88;
+}
+.scrollButton {
+  width: fit-content;
+  margin-top: 47.5px !important;
+  width: 100%;
+  max-width: 137px;
 }
 /*IMAGES*/
 .elipse{

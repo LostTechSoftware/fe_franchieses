@@ -1,5 +1,5 @@
+import DefaultButton from '../DefaultButton';
 import styles from './styles.module.css';
-
 
 export default function FranchiseFee() {
   return (
@@ -20,6 +20,9 @@ export default function FranchiseFee() {
           <div className={styles.rightTextBottom}>
             <text className={styles.freeFranchise}>Gratuita para os próximos 20 franqueados!</text>
             <text className={styles.rightTextBottomParagraph}>Estamos focados em um rápido processo de expansão, por isso zeramos a taxa de franquia para os próximos 20 franqueados aprovados.</text>
+            <DefaultButton className={styles.scrollButton}>
+              Aproveite
+            </DefaultButton>
           </div>
         </div>
       </div>

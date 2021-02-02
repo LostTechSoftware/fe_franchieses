@@ -155,23 +155,8 @@
   background-color: #ffe115;
 }
 .HowWillItWorkTextRight .submitButton {
-  transition: 0.2s;
-  width: 100%;
-  max-width: 137px;
-  padding: 16.5px 24.5px;
+  width: fit-content;
   margin-top: 47.5px;
-  font-size: 1.6rem;
-
-  background-color: #F8E22B;
-  color: #FFF;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.HowWillItWorkTextRight .submitButton:hover {
-  transition: 0.2s;
-  background-color: #F8E22B;
-  filter: contrast(90%)
 }
 /*Responsive cards*/
 @media (max-width: 1160px){

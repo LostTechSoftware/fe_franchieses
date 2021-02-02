@@ -94,7 +94,11 @@ export default function FormSection() {
           Cadastre-se
         </DefaultButton>
       </form>
-      <p className={styles.cellPhone}> cellphonethumb </p>
+      <figure className={styles.cellphonearea}>
+        <img className={styles.elipsebackground} src="images/Elipseformbackground.svg" alt=""/>
+        <img className={styles.elipse} src="images/Elipseform.svg" alt=""/>
+        <img className={styles.cellphone} src="images/cellphonethumb.svg" alt=""/>
+      </figure>
     </main>
   );
 }
