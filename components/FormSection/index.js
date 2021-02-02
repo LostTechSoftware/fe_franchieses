@@ -4,6 +4,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 
+import DefaultButton from '../DefaultButton';
 import registerLead from './firetore';
 import styles from './styles.module.css';
 
@@ -89,13 +90,11 @@ export default function FormSection() {
           />
         </div>
 
-        <Button className={styles.submitButton} type='submit'>
+        <DefaultButton className={styles.submitButton} type='submit'>
           Cadastre-se
-        </Button>
+        </DefaultButton>
       </form>
       <p className={styles.cellPhone}> cellphonethumb </p>
     </main>
   );
 }
-
-//  MuiFormLabel-filled"

@@ -35,31 +35,129 @@
 }
 
 .form .submitButton {
-  transition: 0.2s;
-  padding: 16.5px 24.5px;
   margin-top: 7.6px;
-  font-size: 1.6rem;
-
-  background-color: #F8E22B;
-  color: #FFF;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
 }
-.form .submitButton:hover {
-  transition: 0.2s;
-  background-color: #F8E22B;
-  filter: contrast(90%)
+.cellphonearea{
+  position: absolute;
+  right: 4.3rem;
+  top: 12rem;
 }
-
-.cellPhone {
-  width: auto;
+.elipse{
+  position: absolute;
+  float: left;
+  right: -3rem;
+  top: -6rem;
+  width: 62.92rem;
+  height: 66.08rem;
 }
-
-@media (max-width: 720px){
-  .cellPhone {
+.elipsebackground{
+  position: absolute;
+  float: left;
+  right: 4rem;
+  width: 52.19rem;
+  height: 55.05rem;
+  
+}
+.cellphone{
+  position: absolute;
+  float: left;
+  right: 4rem;
+  width: 52.19rem;
+  height: 55.05rem;
+}
+@media(min-width:2000px){
+  .cellphonearea{
+    position: absolute;
+    right: 4.3rem;
+    top: 13rem;
+  }
+  .elipse{
+    position: absolute;
+    float: left;
+    right: -3rem;
+    top: -6rem;
+    width: 37.75rem;
+    height: 39.65rem;
+  }
+  .elipsebackground{
+    position: absolute;
+    float: left;
+    right: 4rem;
+    width: 31.31rem;
+    height: 33.03rem;
+    
+  }
+  .cellphone{
+    position: absolute;
+    float: left;
+    right: 4rem;
+    width: 31.31rem;
+    height: 31.31rem;
+  }
+}
+@media(max-width:1250px){
+  .cellphonearea{
+    position: absolute;
+    right: 4.3rem;
+    top: 18rem;
+  }
+  .elipse{
+    position: absolute;
+    float: left;
+    right: -3rem;
+    top: -6rem;
+    width: 37.75rem;
+    height: 39.65rem;
+  }
+  .elipsebackground{
+    position: absolute;
+    float: left;
+    right: 4rem;
+    width: 31.31rem;
+    height: 33.03rem;
+    
+  }
+  .cellphone{
+    position: absolute;
+    float: left;
+    right: 4rem;
+    width: 31.31rem;
+    height: 31.31rem;
+  }
+}
+@media(max-width:1100px){
+  .cellphonearea{
+    position: absolute;
+    right: 4.3rem;
+    top: 29rem;
+  }
+  .elipse{
+    position: absolute;
+    float: left;
+    right: -3rem;
+    top: -6rem;
+    width: 62.92rem;
+    height: 66.08rem;
+  }
+  .elipsebackground{
+    position: absolute;
+    float: left;
+    right: 4rem;
+    width: 52.19rem;
+    height: 55.05rem;
+    
+  }
+  .cellphone{
+    position: absolute;
+    float: left;
+    right: 4rem;
+    width: 52.19rem;
+    height: 55.05rem;
+  }
+}
+@media (max-width: 776px){
+  .cellphonearea{
     display: none;
-    width: auto;
   }
   .form {
     width: 100%;
