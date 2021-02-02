@@ -1,6 +1,5 @@
-import styles from './styles.module.css';
 import Button from '@material-ui/core/Button';
-import { withStyles } from '@material-ui/core/styles';
+import styles from './styles.module.css';
 
 export default function HowWillItWork() {
   return (
