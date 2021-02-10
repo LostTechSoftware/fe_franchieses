@@ -33,6 +33,12 @@ const materialStyles = {
   }
 };
 
+const ArrowIcon = () => <img
+  src='/icons/arrow.svg'
+  alt='mostrar conteúdo'
+  className={styles.arrowIcon}
+/> 
+
 function CommonQuestions({ classes }) {
   return (
     <div className={styles.container}>
@@ -42,7 +48,7 @@ function CommonQuestions({ classes }) {
       <Accordion square className={classes.accordionRoot} >
         <AccordionSummary
           className={classes.accordionSummary}
-          expandIcon={<p>UE</p>}
+          expandIcon={<ArrowIcon />}
         >
           <p className={styles.heading}>1. Quanto custa a franquia?</p>
         </AccordionSummary>
@@ -60,7 +66,7 @@ function CommonQuestions({ classes }) {
       <Accordion square className={classes.accordionRoot} >
         <AccordionSummary
           className={classes.accordionSummary}
-          expandIcon={<p>UE</p>}
+          expandIcon={<ArrowIcon />}
         >
           <p className={styles.heading}>2. Como consigo cadastrar os restaurantes da minha cidade?</p>
         </AccordionSummary>
@@ -75,7 +81,7 @@ function CommonQuestions({ classes }) {
       <Accordion square className={classes.accordionRoot} >
         <AccordionSummary
           className={classes.accordionSummary}
-          expandIcon={<p>UE</p>}
+          expandIcon={<ArrowIcon />}
         >
           <p className={styles.heading}>3. Como vai funcionar o marketing?</p>
         </AccordionSummary>
@@ -91,7 +97,7 @@ function CommonQuestions({ classes }) {
       <Accordion square className={classes.accordionRoot} >
         <AccordionSummary
           className={classes.accordionSummary}
-          expandIcon={<p>UE</p>}
+          expandIcon={<ArrowIcon />}
         >
           <p className={styles.heading}>4. O mercado não está saturado?</p>
         </AccordionSummary>
