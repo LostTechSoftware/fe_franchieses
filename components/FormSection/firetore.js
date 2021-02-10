@@ -4,7 +4,7 @@ import 'firebase/firestore';
 export default function fireStore(
   event,
   name,
-  email,
+  phoneNumber,
   uf,
   city,
   firebaseInitialized,
@@ -14,7 +14,7 @@ export default function fireStore(
 
   if(
     !name ||
-    !email ||
+    !phoneNumber ||
     !uf ||
     !city
   ) return 'empty';
@@ -46,7 +46,7 @@ export default function fireStore(
     try {
       await db.collection('people').add({
         Name: name,
-        Email: email,
+        Telefone: phoneNumber,
         Estado: uf,
         Cidade: city
       })

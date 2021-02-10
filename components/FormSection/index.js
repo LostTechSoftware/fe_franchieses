@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import TextField from '@material-ui/core/TextField';
-import MenuItem from '@material-ui/core/MenuItem';
 import { withStyles } from '@material-ui/core/styles';
 
 import DefaultButton from '../DefaultButton';
@@ -36,7 +35,7 @@ const StyledTextField = withStyles({
 
 export default function FormSection() {
   const [ name, setName ] = useState('');
-  const [ email, setEmail ] = useState('');
+  const [ phoneNumber, setPhoneNumber ] = useState('84988885555');
   const [ city, setCity ] = useState('');
   const [ uf, setUf ] = useState('');
 
@@ -46,7 +45,7 @@ export default function FormSection() {
     <main className={styles.container} id='form' >
       <form
         onSubmit={event =>
-          registerLead(event, name, email, uf, city, firebaseInitialized, setFirebaseInitialized)
+          registerLead(event, name, phoneNumber, uf, city, firebaseInitialized, setFirebaseInitialized)
         }
         className={styles.form}
       >
@@ -70,10 +69,15 @@ export default function FormSection() {
 
           <StyledTextField
             className={styles.input}
+            type='tel'
             style={{ width: '100%', maxWidth: 272}}
-            label='E-mail'
-            value={email}
-            onChange={event => setEmail(event.target.value)}
+            label='Telefone/Whatsapp'
+            value={phoneNumber}
+            onChange={event => {
+              let value = event.target.value;
+              value = value.replace(/[^0-9]/g, '');
+              setPhoneNumber(value)}
+            }
           />
 
           <StyledTextField
@@ -82,10 +86,7 @@ export default function FormSection() {
             label='Estado'
             value={uf}
             onChange={event => setUf(event.target.value)}
-          >
-            <MenuItem value="10">Ten</MenuItem>
-            <MenuItem value="20">Twenty</MenuItem>
-          </StyledTextField>
+          />
 
           <StyledTextField
             className={styles.input}
