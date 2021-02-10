@@ -45,11 +45,12 @@ export default function fireStore(
   async function registerLead() {
     try {
       await db.collection('people').add({
-        Name: name,
+        Nome: name,
         Telefone: phoneNumber,
         Estado: uf,
         Cidade: city
       })
+      window.location.replace("http://foodzilla.com.br/")
     } catch (error) {
       console.log('error');
       return error;
