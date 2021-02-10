@@ -1,11 +1,27 @@
 import firebase from 'firebase';
 import 'firebase/firestore';
 
-export default function fireStore(event, name, email, uf, city) {
+export default function fireStore(
+  event,
+  name,
+  email,
+  uf,
+  city,
+  firebaseInitialized,
+  setFirebaseInitialized
+) {
   event.preventDefault();
 
-  if(!sessionStorage.getItem('fireAppInitialized'))
+  if(
+    !name ||
+    !email ||
+    !uf ||
+    !city
+  ) return 'empty';
+
+  if(!firebaseInitialized)
     try {
+      console.log('INSIDE THI FUCKING TRY')
       const firebaseConfig = {
         apiKey: "AIzaSyBN4KJ3GkzziaUA9-e98VN2eFftw55DV74",
         authDomain: "food-16e3e.firebaseapp.com",
@@ -16,13 +32,15 @@ export default function fireStore(event, name, email, uf, city) {
         measurementId: "G-9E2JG5589R"
       };
       firebase.initializeApp(firebaseConfig);
-      sessionStorage.setItem('fireAppInitialized', true)
+      setFirebaseInitialized(true);
     } catch (error) {
+      console.log('INSIDE THI FUCKING CATCH')
       throw error;
     }
   
   const db = firebase.firestore();
-  db.settings({ timestampsInSnapshots: true });
+  if(!firebaseInitialized)
+    db.settings({ timestampsInSnapshots: true });
 
   async function registerLead() {
     try {
@@ -33,7 +51,7 @@ export default function fireStore(event, name, email, uf, city) {
         Cidade: city
       })
     } catch (error) {
-      console.log(error);
+      console.log('error');
       return error;
     }
   }

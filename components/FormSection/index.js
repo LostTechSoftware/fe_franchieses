@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
-import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 
 import DefaultButton from '../DefaultButton';
@@ -41,9 +40,16 @@ export default function FormSection() {
   const [ city, setCity ] = useState('');
   const [ uf, setUf ] = useState('');
 
+  const [ firebaseInitialized, setFirebaseInitialized ] = useState(false);
+
   return (
     <main className={styles.container} id='form' >
-      <form onSubmit={event => registerLead(event, name, email, uf, city)} className={styles.form}>
+      <form
+        onSubmit={event =>
+          registerLead(event, name, email, uf, city, firebaseInitialized, setFirebaseInitialized)
+        }
+        className={styles.form}
+      >
         <h1>
           Torne-se um franqueado FoodZilla e seja dono do seu
           <br/>

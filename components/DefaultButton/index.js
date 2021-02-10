@@ -20,6 +20,8 @@ const DefaultButton = withStyles({
       height: '100%',
       width: '100%',
       padding: '16.5px 24.5px',
+      backgroundColor: '#F8E22B',
+      borderRadius: 8,
     },
     '& a': {
       height: '100%',
