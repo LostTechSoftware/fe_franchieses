@@ -42,7 +42,7 @@ export default function FormSection() {
   const [ uf, setUf ] = useState('');
 
   return (
-    <main className={styles.container}>
+    <main className={styles.container} id='form' >
       <form onSubmit={event => registerLead(event, name, email, uf, city)} className={styles.form}>
         <h1>
           Torne-se um franqueado FoodZilla e seja dono do seu
@@ -91,7 +91,7 @@ export default function FormSection() {
         </div>
 
         <DefaultButton className={styles.submitButton} type='submit'>
-          Cadastre-se
+          <p>Cadastre-se</p>
         </DefaultButton>
       </form>
       <figure className={styles.cellphonearea}>

@@ -1,18 +1,39 @@
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 
- const DefaultButton = withStyles({
+const DefaultButton = withStyles({
   root: {
     transition: '0.2s',
-    padding: '16.5px 24.5px',
-    fontSize: 16,
-    textTransform: 'capitalize',
+    padding: 0,
+    textTransform: 'none',
   
     backgroundColor: '#F8E22B',
     color: '#FFF',
     border: 'none',
     borderRadius: 8,
     cursor: 'pointer',
+
+    '& *': {
+      fontSize: 16,
+      color: '#FFF',
+    },
+    '& p': {
+      height: '100%',
+      width: '100%',
+      padding: '16.5px 24.5px',
+    },
+    '& a': {
+      height: '100%',
+      width: '100%',
+      padding: '16.5px 24.5px',
+    },
+
+    // '& a': {
+    //   height: '100%',
+    //   width: '100%',
+    //   fontSize: 16,
+    //   color: '#FFF',
+    // },
 
     '&:hover': {
       transition: '0.2s',
