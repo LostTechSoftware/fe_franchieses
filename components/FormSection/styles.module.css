@@ -21,9 +21,10 @@
 
 .inputs {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 574px;
-  justify-content: space-between;
+  margin-top: 14px;
 }
 
 .inputs input,
