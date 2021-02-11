@@ -44,8 +44,8 @@ export default function Footer() {
       <footer className={styles.footerbottom}>
         <div className={styles.line}></div>
         <div className={styles.textbottom}>
-          <text className={styles.crafttedtext}>Crafted by </text>
-          <text className={styles.foodzillatext}>Foodzila</text>
+          <text className={styles.crafttedtext}>Created by </text>
+          <text className={styles.foodzillatext}>Foodzilla</text>
         </div>
       </footer>
     </>

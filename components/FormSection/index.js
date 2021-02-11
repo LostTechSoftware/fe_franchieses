@@ -35,7 +35,7 @@ const StyledTextField = withStyles({
 
 export default function FormSection() {
   const [ name, setName ] = useState('');
-  const [ phoneNumber, setPhoneNumber ] = useState('84988885555');
+  const [ phoneNumber, setPhoneNumber ] = useState('');
   const [ city, setCity ] = useState('');
   const [ uf, setUf ] = useState('');
 
