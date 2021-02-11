@@ -5,7 +5,23 @@ export default function FranchiseFee() {
   return (
     <section>
       <div className={styles.franchiseoff}>
-        <img className={styles.elipse} src="images/ElipseFranchieseFee.svg" alt="ElipseFranchieseFee.svg"/>
+        <div className={styles.cellPhoneBox}>
+          <img
+            className={styles.cellPhone}
+            src="images/cellphonethumb.svg"
+            alt="Cell phone"
+          />
+          <img
+            className={styles.elipse}
+            src="images/ElipseFranchieseFee.svg"
+            alt="ElipseFranchieseFee"
+          />
+          <img
+            className={styles.yellowFade}
+            src="images/yellowFade.svg"
+            alt="Yellow fade"
+          />
+        </div>
         <div className={styles.leftText}>
           <text className={styles.off}>100% OFF</text>
           <text className={styles.franchisenumber}>20</text>
