@@ -70,13 +70,23 @@
   margin-bottom: 2rem;
 }
 .linktext{
+  transition: 0.2s;
   font-size: 1.8rem;
   font-family: 'Open Sans', sans-serif;
   color: #747e88;
 }
+.linktext:hover {
+  transition: 0.2s;
+  color: #ffe115;
+}
 .foodzillalogo{
+  transition: 0.2s;
   width: 15rem;
   height: 2.95rem;
+}
+.foodzillalogo:hover {
+  transition: 0.2s;
+  fill: #ffe115;
 }
 
 @media(max-width:720px){

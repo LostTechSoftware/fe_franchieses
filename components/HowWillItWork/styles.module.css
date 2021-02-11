@@ -368,20 +368,13 @@
 }
 @media(max-width:367px){
   .phases{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 481.5px;
+    margin-top: 531.5px;
     margin-left: 32.9px;
     width: 8.09rem;
     height: 37.7rem;
-    
   }
   .phasesDescriptions{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 486.5px;
+    margin-top: 536.5px;
     margin-left: 3.2rem;
     width: 11.6rem;
     height: 36.8rem;

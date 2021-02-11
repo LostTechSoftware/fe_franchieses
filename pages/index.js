@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Seja um franqueado Foodzilla</title>
         <link rel="icon" href="/favicon.png"/>
       </Head>
 
