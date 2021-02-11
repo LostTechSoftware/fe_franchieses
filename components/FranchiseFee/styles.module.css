@@ -51,6 +51,14 @@
   right: 0;
   flex-direction: column;
 }
+.rightTextTop img {
+  position: absolute;
+  top: -2.2em;
+  left: -5em;
+  max-width: 115%;
+  transform: rotate(0deg);
+  opacity: 0.9;
+}
 .rightText{
   width: 100%;
   height: 100%;
@@ -60,6 +68,7 @@
   font-weight: bold;
   font-size: 4.2rem;
   color: #343a40;
+  opacity: 0.9;
 }
 .franchisefee{
   font-size: 4.2rem;
@@ -145,8 +154,6 @@
     background-color: #f3fdff;
   }
   .rightTextTop{
-    display: flex;
-    align-items: center;
     position: absolute;
     height: 20.05rem;
     width: 44.4rem;
@@ -177,8 +184,6 @@
     font-family: 'Open Sans', sans-serif;
   }
   .rightTextTop{
-    display: flex;
-    align-items: center;
     position: absolute;
     height: 20.05rem;
     width: 44.4rem;
@@ -209,8 +214,6 @@
     font-family: 'Open Sans', sans-serif;
   }
   .rightTextTop{
-    display: flex;
-    align-items: center;
     position: absolute;
     height: 13.05rem;
     width: 40rem;

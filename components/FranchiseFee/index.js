@@ -29,6 +29,11 @@ export default function FranchiseFee() {
         </div>
         <div className={styles.rightText}>
           <div className={styles.rightTextTop}>
+            <img
+              className={styles.cellPhone}
+              src="images/priceCoverLine.svg"
+              alt="Cell phone"
+            />
             <text className={styles.franchisefee}>Taxa de Franquia</text>
             <text className={styles.price}>De R$1.000 à R$5.000</text>
             <text className={styles.priceCondition}>De acordo com o número de habitantes.</text>
