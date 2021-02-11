@@ -3,10 +3,11 @@ import styles from './styles.module.css';
 export default function OurMission() {
   return (
     <section>
-      <div>
-      <h1 className={styles.title}>A Nossa Missão</h1>
-      <p className={styles.text}>Somos uma plataforma em busca do crescimento, inovação e a<br></br>comodidade. Aliamos um bom design a fácil usabilidade e velocidade, oferecendo uma<br></br>excelente experiência do usuário.</p>
-      <p className={styles.text}>Por isso queremos você no nosso time!</p>
+      <div className={styles.titleBox}>
+        <img className={styles.starIcon} src='/images/star.svg' alt=""/>
+        <h1 className={styles.title}>A Nossa Missão</h1>
+        <p className={styles.text}>Somos uma plataforma em busca do crescimento, inovação e a<br></br>comodidade. Aliamos um bom design a fácil usabilidade e velocidade, oferecendo uma<br></br>excelente experiência do usuário.</p>
+        <p className={styles.text}>Por isso queremos você no nosso time!</p>
       </div>
 
       <div className={styles.cards}>

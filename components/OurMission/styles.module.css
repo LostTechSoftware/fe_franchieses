@@ -1,9 +1,14 @@
+.titleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .title{
   font-weight: bold;
   text-align: center;
   font-size: 4.2rem;
   color: #343a40;
-  margin: 87px 15px 20px 15px;
+  margin: 0 15px 20px 15px;
 }
 .text{
   font-size: 1.6rem;
