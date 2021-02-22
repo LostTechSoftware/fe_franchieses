@@ -41,12 +41,29 @@ export default function FormSection() {
 
   const [ firebaseInitialized, setFirebaseInitialized ] = useState(false);
 
+  function requestContact(event) {
+    event.preventDefault();
+    const callback = () => {
+      console.log('callback');
+    }
+    registerLead(
+      name,
+      phoneNumber,
+      uf,
+      city,
+      firebaseInitialized,
+      setFirebaseInitialized
+    )
+    gtag('event', 'conversion', {
+      'send_to': 'AW-835505131/vrdeCIWPnfcBEOuXs44D',
+      'event_callback': callback
+    });
+  }
+
   return (
     <main className={styles.container} id='form' >
       <form
-        onSubmit={event =>
-          registerLead(event, name, phoneNumber, uf, city, firebaseInitialized, setFirebaseInitialized)
-        }
+        onSubmit={requestContact}
         className={styles.form}
       >
         <h1>

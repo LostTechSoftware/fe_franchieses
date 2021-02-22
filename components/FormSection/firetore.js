@@ -2,7 +2,6 @@ import firebase from 'firebase';
 import 'firebase/firestore';
 
 export default function fireStore(
-  event,
   name,
   phoneNumber,
   uf,
@@ -10,8 +9,6 @@ export default function fireStore(
   firebaseInitialized,
   setFirebaseInitialized
 ) {
-  event.preventDefault();
-
   if(
     !name ||
     !phoneNumber ||
