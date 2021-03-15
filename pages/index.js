@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/Header';
 // import FormSection from '../components/FormSection';
 import OurMission from '../components/OurMission';
-import FranchiseFee from '../components/FranchiseFee';
+import FranchiseFeeNew from '../components/FranchiseFeeNew';
 import HowWillItWork from '../components/HowWillItWork';
 import Footer from '../components/Footer';
 
@@ -30,7 +30,7 @@ export default function Home() {
 
       <OurMission />
 
-      <FranchiseFee />
+      <FranchiseFeeNew />
       
       <HowWillItWork />
 
