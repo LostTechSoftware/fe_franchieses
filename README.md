@@ -1,34 +1,125 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/icon.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">FoodZilla Partners Dashboard</h3>
+
+  <p align="center">
+    Uma infraestrutura poderosa
+    <br />
+    <a href="https://www.notion.so/foodzillabr/Engineering-Wiki-c8f9d76fc8c5490dbdd321dcf9e05e3f"><strong>Veja a documentação »</strong></a>
+    <br />
+    <br />
+    <a href="https://partners.foodzilla.com.br">View Prod</a>
+    ·
+    <a href="https://staging-partners.foodzilla.com.br">View staging</a>
+    ·
+    <a href="https://helpcenter.foodzilla.com.br">Report Bug</a>
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+Esse é o web dos parceiros da plataforma que integra milhares de outras funcionalidades, sendo assim uma ferramenta poderosa e eficiente.
+
+### Built With
+
+Aqui vemos uma das mais poderosas ferramentas usadas pelo Backend
+
+- [React](https://pt-br.reactjs.org/)
+- [Heroku](https://heroku.coms)
+
+<!-- GETTING STARTED -->
 
 ## Getting Started
 
-First, run the development server:
+Para iniciar o projeto é necessário seguir os passos abaixo:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+É preciso ter heroku-cli e yarn
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- yarn
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+  ```sh
+  npm install --global yarn
+  ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- heroku-cli
+  ```sh
+  npm install -g heroku
+  ```
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repo
+   ```sh
+   git clone https://github.com/LostTechSoftware/fe_partners_dashboard
+   ```
+2. Install packages
+   ```sh
+   yarn
+   ```
+3. Clone environment keys
+   ```JS
+   heroku config -a foodzilla-partners-staging -s >> .env
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- USAGE EXAMPLES -->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+Usado para toda a infraestrutura do FoodZilla.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+_For more examples, please refer to the [Documentation](https://www.notion.so/foodzillabr/Engineering-Wiki-c8f9d76fc8c5490dbdd321dcf9e05e3f)_
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- ROADMAP -->
+
+## Roadmap
+
+See the [PRs](https://github.com/LostTechSoftware/bk_clientes/pulls) for a list of proposed features (and known issues).
+
+<!-- CONTRIBUTING -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[product-screenshot]: images/screenshot.png
