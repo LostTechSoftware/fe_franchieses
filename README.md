@@ -75,8 +75,6 @@ yarn staging
 
 Usado para toda a infraestrutura do FoodZilla.
 
-_For more examples, please refer to the [Documentation](https://www.notion.so/foodzillabr/Engineering-Wiki-c8f9d76fc8c5490dbdd321dcf9e05e3f)_
-
 <!-- ROADMAP -->
 
 ## 🗺 Roadmap
